@@ -13,17 +13,12 @@ namespace Opdracht3
             int[] getallen;
             getallen = new int[10];
             Console.WriteLine("10 getallen aub: ");
-            getallen[0] = Convert.ToInt32(Console.ReadLine());
-            getallen[1] = Convert.ToInt32(Console.ReadLine());
-            getallen[2] = Convert.ToInt32(Console.ReadLine());
-            getallen[3] = Convert.ToInt32(Console.ReadLine());
-            getallen[4] = Convert.ToInt32(Console.ReadLine());
-            getallen[5] = Convert.ToInt32(Console.ReadLine());
-            getallen[6] = Convert.ToInt32(Console.ReadLine());
-            getallen[7] = Convert.ToInt32(Console.ReadLine());
-            getallen[8] = Convert.ToInt32(Console.ReadLine());
-            getallen[9] = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < getallen.Length; i++)
+            {
+                getallen[i] = Convert.ToInt32(Console.ReadLine());
+            }
             Console.WriteLine();
+            Array.Sort(getallen);
             for (int count = 0; count < 10; count++)
             {
                 if (getallen[count] % 2 == 0)

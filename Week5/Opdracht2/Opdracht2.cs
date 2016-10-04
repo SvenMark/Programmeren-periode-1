@@ -19,6 +19,7 @@ namespace Opdracht2
             }
             Console.Write("Welk getal wilt u zien? ");
             int gevraagd = Convert.ToInt32(Console.ReadLine());
+            //voor gebruikers zonder kennis van array's. Positie 1 == 0.
             int antwoord = getallen[gevraagd - 1];
             Console.WriteLine("Het getal op positie {0} is {1}", gevraagd, antwoord);
             Console.ReadKey();
