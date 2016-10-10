@@ -25,7 +25,17 @@ namespace ConsoleApplication6
   // print de array van achter naar voeren 
         public static void vraag2()
         {
-             
+            int[] getallen = new int[7];
+            for (int i = 0; i < getallen.Length; i++)
+            {
+                Console.Write("Getal {0}: ", i + 1);
+                getallen[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Array.Reverse(getallen);
+            foreach (int i in getallen)
+            {
+                Console.WriteLine(i);
+            }
         }
         // vraag3:  
         // enter 3 getalen en print de klein getal uit.
@@ -34,8 +44,8 @@ namespace ConsoleApplication6
         }
         static void Main(string[] args)
         {
-            vraag1();
-            //vraag2();
+            //vraag1();
+            vraag2();
             //vraag3();
             Console.ReadLine();
 
