@@ -64,7 +64,6 @@ namespace ConsoleApplication6
             //vraag2();
             //vraag3();
             Console.ReadLine();
-
         }
     }
 }
